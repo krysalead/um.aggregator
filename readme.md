@@ -28,11 +28,10 @@ You need then to build the images to be run, this is a one time job unless you c
 docker-compose build
 ```
 
-You will need to build the server side
+Running the entire application
 
 ```
-cd backend
-npm run build
+docker-compose up
 ```
 
 ## Play
