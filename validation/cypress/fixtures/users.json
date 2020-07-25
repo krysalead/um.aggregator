@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "lastName": "DOE",
+      "firstName": "John",
+      "email": "jdoe@test.com"
+    },
+    {
+      "id": "2",
+      "lastName": "Skywalker",
+      "firstName": "Luke",
+      "email": "l.skywalker@star.war"
+    },
+    {
+      "id": "3",
+      "lastName": "Skywalker",
+      "firstName": "Anakin",
+      "email": "a.skywalker@star.war"
+    },
+    {
+      "id": "4",
+      "lastName": "Da",
+      "firstName": "Yo",
+      "email": "y.da@star.war"
+    },
+    {
+      "id": "5",
+      "lastName": "Kenobi",
+      "firstName": "Obi wan",
+      "email": "ow.kenobi@star.war"
+    },
+    {
+      "id": "6",
+      "lastName": "Fett",
+      "firstName": "Boba",
+      "email": "b.fett@star.war"
+    }
+  ]
+}

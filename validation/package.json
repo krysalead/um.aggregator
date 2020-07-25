@@ -1,0 +1,24 @@
+{
+  "name": "user_management",
+  "version": "1.0.0",
+  "description": "This repository is for testing a whole application with React and Swim",
+  "scripts": {
+    "test": "cypress run",
+    "cy": "cypress open"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "cypress",
+    "swim"
+  ],
+  "author": "krysalead@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^6.0.0",
+    "cypress": "^4.11.0"
+  }
+}
