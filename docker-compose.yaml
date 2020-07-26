@@ -9,10 +9,12 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend:/usr/app
+      - ./frontend/src:/usr/app/src
+      - ./frontend/public:/usr/app/public
     environment:
       CI: "true"
       SERVER: http://backend:4000/
+      WAIT_HOSTS: backend:4000
   backend:
     build:
       context: ./backend
@@ -20,13 +22,26 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - ./backend/:/usr/app
+      - ./backend/src:/usr/app/src
+      - ./backend/tests:/usr/app/tests
+      - ./backend/data:/usr/app/data
     depends_on:
-      - mongo
       - kafka
     environment:
       ENV: development
       LOGGING_SERVICES: debug
+      BROKERS: kafka:9092
+      WAIT_HOSTS: kafka:9092
+  metrics:
+    build:
+      context: ./metrics
+      dockerfile: dockerfile
+    depends_on:
+      - kafka
+    environment:
+      ENV: development
+      INFLUXDB_URL: http://influxdb:8086
+      BROKERS: kafka:9092
       WAIT_HOSTS: kafka:9092
   zookeeper:
     image: zookeeper:3.4.9

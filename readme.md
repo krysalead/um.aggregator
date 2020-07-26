@@ -12,9 +12,7 @@ You need first to load the content of the frontend and backend (sub)modules.
 git submodule init
 ```
 
-### To run tests
-
-Setup databases for tests
+Setup databases
 
 ```
 ./scripts/setup.sh

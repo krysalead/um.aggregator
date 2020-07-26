@@ -1,0 +1,9 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/krysalead/um.frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/krysalead/um.backend.git
+[submodule "metrics"]
+	path = metrics
+	url = https://github.com/krysalead/um.metrics.git
