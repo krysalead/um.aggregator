@@ -58,3 +58,16 @@ docker-compose up
 
 - UI --> http://localhost:3000
 - Metrics --> http://localhost:6000
+
+## Improvment
+
+- Use a build of the frontend rather than dev server
+- Run UI behind a http server
+
+## Debug
+
+Following only a service
+
+```
+docker-compose up | grep frontend_1
+```

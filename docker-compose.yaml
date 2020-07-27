@@ -11,6 +11,7 @@ services:
     volumes:
       - ./frontend/src:/usr/app/src
       - ./frontend/public:/usr/app/public
+      - ./frontend/api:/usr/app/api
     environment:
       CI: "true"
       SERVER: http://backend:4000/
