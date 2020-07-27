@@ -16,6 +16,16 @@ This project aims at manage user defined by their names and emails. It allows on
 
 ![architecture](architecture.png)
 
+Database is SQLite for the following reasons
+
+- The way we search in it, is efficient.
+- It can be replicated in the UI
+- It support indexes and unicity
+
+As we are using an ORM changing to a different database is as easy as changing a string in a config file.
+
+Kafka is used here as asynchronous job queuing, it is used to push metrics which are not mission critical / SLA focused and can also be used to send email for instance.
+
 ## install
 
 You need first to load the content of the frontend, backend and metrics (sub)modules.
