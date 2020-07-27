@@ -2,17 +2,29 @@
 
 ## Pre-requists
 
+- Java 1.8.0
+- Docker
 - [install docker-compose ](https://docs.docker.com/compose/install/)
+
+## Presentation
+
+### Subject
+
+This project aims at manage user defined by their names and emails. It allows only people from France to add users, no other restriction. Metrics are pushed to a database for each event happening on the application
+
+### Global overview of the architecture
+
+![architecture](architecture.png)
 
 ## install
 
-You need first to load the content of the frontend and backend (sub)modules.
+You need first to load the content of the frontend, backend and metrics (sub)modules.
 
 ```
 git submodule init
 ```
 
-Setup databases
+Setup for the front and back (database, swagger code generation)
 
 ```
 ./scripts/setup.sh

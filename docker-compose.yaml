@@ -15,7 +15,7 @@ services:
       CI: "true"
       SERVER: http://backend:4000/
       WAIT_HOSTS: backend:4000
-      CHOKIDAR_USEPOLLING: true
+      CHOKIDAR_USEPOLLING: "true"
   backend:
     build:
       context: ./backend
