@@ -57,7 +57,7 @@ docker-compose up
 ## Play
 
 - UI --> http://localhost:3000
-- Metrics --> http://localhost:6000
+- Metrics --> http://localhost:8080 (admin/admin)
 
 ## Backend Code explanation
 
